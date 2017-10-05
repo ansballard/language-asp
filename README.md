@@ -1,6 +1,6 @@
 # language-asp package
 
-**NOTE: I can no longer dedicate time to fix this if someone, would like to take this over please feel free.**
+**NOTE: I can no longer dedicate time to maintain this anymore, if someone would like to take this over please feel free.**
 
 Adds syntax highlighting and snippets for classic ASP files into Atom.
 
