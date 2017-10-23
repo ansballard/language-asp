@@ -1,8 +1,12 @@
 {
   "name": "language-asp",
   "version": "1.0.0",
+  "author": "Aaron Ballard (ans.ballard@gmail.com)",
   "description": "Classic ASP language support",
-  "repository": "https://github.com/Trickierstinky/language-asp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansballard/language-asp"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
