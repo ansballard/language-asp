@@ -1,6 +1,6 @@
 {
   "name": "language-asp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Aaron Ballard (ans.ballard@gmail.com)",
   "description": "Classic ASP language support",
   "repository": {
