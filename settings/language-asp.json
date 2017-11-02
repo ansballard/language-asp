@@ -1,0 +1,14 @@
+{
+  ".source.asp": {
+    "editor": {
+      "foldEndPattern": "(?i)^\\s*End (Class|Function|Sub|Property)\\s*$",
+      "commentStart": "'"
+    }
+  },
+  ".text.html.asp": {
+    "editor": {
+      "foldEndPattern":
+        "(</(?i:(head|table|div|style|script|ul|ol|form|dl))>|\\})"
+    }
+  }
+}

@@ -1,15 +1,27 @@
 {
   "name": "language-asp",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Aaron Ballard (ans.ballard@gmail.com)",
   "description": "Classic ASP language support",
   "repository": {
     "type": "git",
     "url": "https://github.com/ansballard/language-asp"
   },
+  "scripts": {
+    "prettier": "prettier --write grammars/*.json --write settings/*.json --write snippets/*.json",
+    "gitadd": "git add ./grammars settings snippets"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "pre-commit": [
+    "prettier",
+    "gitadd"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.7.4"
+  }
 }

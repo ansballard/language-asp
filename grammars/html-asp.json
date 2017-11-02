@@ -1,0 +1,39 @@
+{
+  "fileTypes": ["asp", "inc"],
+  "name": "HTML (ASP)",
+  "patterns": [
+    {
+      "begin": "<%=?",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.section.embedded.begin.asp"
+        }
+      },
+      "end": "%>",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.embedded.end.asp"
+        }
+      },
+      "name": "source.asp.embedded.html",
+      "patterns": [
+        {
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.comment.asp"
+            }
+          },
+          "match": "(').*?(?=%>)",
+          "name": "comment.line.apostrophe.asp"
+        },
+        {
+          "include": "source.asp"
+        }
+      ]
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ],
+  "scopeName": "text.html.asp"
+}

@@ -1,0 +1,50 @@
+{
+  ".source.asp": {
+    "<%= %>": {
+      "prefix": "=",
+      "body": "<%= $0 %>"
+    },
+    "For … in … Next": {
+      "prefix": "forin",
+      "body": "For ${1:var} in ${2:array}\n\t${3:' body}\nNext"
+    },
+    "If … End if": {
+      "prefix": "ifelse",
+      "body":
+        "If ${1:condition} Then\n\t${2:' true}\nElse\n\t${3:' false}\nEnd if"
+    },
+    "While … Wend": {
+      "prefix": "while",
+      "body": "While ${1:NOT ${2:condition}}\n\t${3:' body}\nWend"
+    },
+    "Request.Form(\"…\")": {
+      "prefix": "r.f",
+      "body": "Request.Form(\"${1:field}\")"
+    },
+    "Request.QueryString": {
+      "prefix": "r.q",
+      "body": "Request.QueryString(\"${1:name}\")"
+    },
+    "Response.Write": {
+      "prefix": "r.w",
+      "body": "Response.Write "
+    },
+    "Response.Redirect": {
+      "prefix": "r.r",
+      "body": "Response.Redirect(${1:to})"
+    },
+    "Application(\"…\")": {
+      "prefix": "app",
+      "body": "Application(\"$1\")"
+    },
+    "Session(\"…\")": {
+      "prefix": "sess",
+      "body": "Session(\"${1:whatever}\")"
+    },
+    "On Error Resume Next …": {
+      "prefix": "error",
+      "body":
+        "On Error Resume Next\n\t${1}\nIf Err Then\n\tResponse.Write Err.Description\nEnd If\nOn Error Goto 0"
+    }
+  }
+}
